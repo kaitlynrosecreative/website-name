@@ -1,0 +1,511 @@
+html {
+  scroll-behavior: smooth;
+}
+/*this is css for the text on the page*/
+h1{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	color: silver;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 10px;
+}
+
+h2{
+	font-size: 30px;
+	font-family: 'Open Sans';
+	color: silver;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 10px;
+
+}
+
+h3{
+	font-size: 15px;
+	font-family: 'Open Sans';
+	color: silver;
+	text-transform: uppercase;
+	font-weight: bolder;
+	
+}
+
+p{
+	font-size: 17px;
+	font-family: 'Open Sans';
+	color: silver;
+	font-weight: lighter;
+}
+
+b{
+	font-size: 17px;
+	font-family: 'Open Sans';
+	color: silver;
+	font-weight: lighter;
+}
+
+/*END of text css~~~*/
+
+/*this is css for the initial div boxes*/
+.navigationdiv{
+	/*border: solid silver;*/
+	height: 125px;
+	width: 100%;
+
+}
+.sectiononediv{
+	
+	/*border: solid silver;*/
+	margin-top: 20px;
+	height: 975px;
+	width: 100%;
+}
+.sectiontwodiv{
+	/*border: solid silver;*/
+	margin-top:20px;
+	height: 975px;
+	width: 100%;
+}
+.sectionthreediv{
+
+	/*border: solid silver;*/
+	margin-top:20px;
+	height: 975px;
+	width: 100%;
+
+}
+.sectionfourdiv{
+	display:block;
+	/*border: solid silver;*/
+	margin-top:20px;
+	height: 975px;
+	width: 100%;
+}
+
+.footerdiv{
+	/*border: solid silver;*/
+	margin-top:20px;
+	height: 250px;
+	width:100%;
+}
+
+/*<!-- (NAVIGATION DIV) ******************************************/
+/*this css if sor the nav bar itsself*/
+.nav {
+	position: fixed;
+	width: 100%;
+	height:80px;
+	margin-top:-13px;
+	background-color: black;
+	padding: 20px;
+	overflow: auto;
+	font-size: 20px;
+	z-index:9;
+	list-style: none;
+
+}
+
+/*this is css for the list*/
+.nav li {   
+	padding:15px;
+	padding-left:50px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*this is css for the text in thenav*/
+a {
+	color: silver;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+	font-weight: lighter;
+}
+
+/*this is css for the logo on the nav*/
+.witcherlogo{
+	position: fixed;
+	top:30px;
+	width: 35%;
+	z-index:10;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/*END of nav~~~*/
+
+
+
+
+/*this is css for the logo fade loading screen*/
+.logofade{
+	position: absolute;
+	width:100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index:2;
+}
+
+
+/*this is css for the main background image*/
+.witcher2{
+	z-index:-1;
+	width:100%;
+	height:100%;
+	margin-top:-50px;
+}
+
+/*this is css for the slogan*/
+.slogan{
+	position: absolute;
+	top: 75%;
+	left: 5%;
+	text-shadow: 2px 2px 2px black;
+	
+}
+.make-slogan-glow{
+	animation: glow 1s infinite alternate;
+}
+
+
+/*this is the css for the "about div"*/
+.story{
+	
+	width: 40%;
+	text-align: left;
+	margin: auto;
+	padding-top:150px;
+
+}
+
+/*flippy cards*/
+
+.characterheader{
+	position: relative;
+	margin-left:  40%;
+	margin-top:200px;
+	
+	
+}
+
+
+.geraltflip{
+	position:relative;
+	margin-left: 400px;
+}
+.yenflip{
+	position:relative;
+	margin-left: 800px;
+}
+.ciriflip{
+	position:relative;
+	margin-left: 1200px;
+}
+.flip-card {
+  	margin-top:120px;
+	position:absolute;  
+	background-color: transparent;
+	width: 400px;
+	height: 500px;
+	perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  text-align: center;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-back {
+  border: solid silver;
+  padding:20px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  transform: rotateY(180deg);
+}
+
+/*this is the css for witcher3
+ image*/
+.witcher3{
+	width: 100%;
+	height:100%;
+}
+
+/*this is css for the trailer*/
+.trailer{
+	position:absolute;
+	margin-top:-650px;
+	margin-left:35%;
+	width:600px;
+	height:400px;
+	box-shadow: 15px 15px 15px black;
+	
+}
+
+.trailerinfo{
+	position:relative;
+	float:right;
+	padding:20px;
+	margin-right:150px;
+	margin-top:-650px;
+	height: 355px;
+	padding-top: 20px;
+	text-align: left;
+	background-color: black;
+	box-shadow: 15px 15px 15px black;
+	
+}
+
+
+/*this is css for the trailer title*/
+.watchtrailer{
+	margin-top: -250px;
+	text-align: right;
+	padding-left:850px;
+	width: 30%;
+	z-index: 2;
+	text-shadow: 2px 2px 2px black;
+	
+
+}
+
+.g-background-default {
+    background-color: #F5F60D !important;
+}
+
+/*this is css for the footer*/
+.footer {   
+   float:left;
+   height:200px;
+   width: 100%;
+	margin-left:40px;
+   background-color: black;
+   text-align: left;
+
+
+}
+
+/*social medias*/
+.socialmedias{
+	float:right;
+	padding:40px;
+	margin-top:-100px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: silver;
+  color: black;
+}
+
+.fa-twitter {
+  background: silver;
+  color: black;
+}
+.fa-youtube {
+  background: silver;
+  color: black;
+}
+.fa-instagram {
+  background: silver;
+  color: black;
+}
+
+/*keyframe*/
+	@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #aef4af;
+  }
+}
+
+
+
+/*this is the beginning of MEDIA QUERIES!?!?!*/
+/*standard web side and mobile phone size*/
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width : 600px) {
+
+/*DISPLAY NONE'D*/
+	
+	.logofade{
+		display: none;
+	}
+	.nav{
+		display:none;
+	}
+
+
+/*NAVIGATION*/
+
+.navigationdiv{
+	position:fixed;
+	margin-top:-22px;
+	background-color:black;
+	width: 100%;
+	height:70px;
+	z-index:15;
+}
+.witcherlogo{
+	z-index:16;
+}
+/*SECTION ONE*/
+
+.sectiononediv{
+	height: 300px;
+	width: 100%;
+}
+
+.witcher2{
+	margin-top:0px;
+	height:300px;
+}
+.slogan{
+	top:20%;
+	padding:40px;
+}
+
+h2{
+	font-size:18px;
+}
+
+/*SECTION TWO*/
+
+.sectiontwodiv{
+	height: 300px;
+	width: 100%;
+}
+
+.story{
+	width:500px;
+	padding:20px;
+	margin-top:-10px;
+	text-align:center;
+}
+p{
+	font-size:10px;
+	text-align:left;
+}
+
+/*SECTION THREE*/
+
+.sectionthreediv{
+	height: 300px;
+	width: 100%;
+}
+
+.characterheader{
+	display:none;
+}
+
+
+
+.geraltflip, .yenflip, .ciriflip, .flip-card, .flip-card-inner, .flip-card:hover, .flip-card-inner, .flip-card-front,.flip-card-back,.flip-card-back{
+	display:none;
+}
+
+
+/*SECTION FOUR*/
+.sectionfourdiv{
+	height: 300px;
+	width: 100%;
+}
+
+
+/*this is css for the trailer*/
+.trailer{
+/*
+	width:300px;
+	height:200px;
+	margin-top:-60px;
+	margin-left:150px;*/
+	display:none;
+}
+
+.trailerinfo{
+	position: absolute;
+	bottom:-50px;
+	width:300px;
+	height:200px;
+	margin:0px;
+	padding:0px;
+	text-align: left;
+	left: 60%;
+	transform: translate(-50%, 0);
+	z-index:0;
+	
+}
+b{
+	font-size:10px;
+}
+h3{
+	font-size:10px;
+}
+
+
+/*this is css for the trailer title*/
+.watchtrailer{
+	
+	display:none;
+	
+}
+
+.footerdiv{
+	margin-top:20px;
+	margin-left:0px;
+	height: 250px;
+	width:100%;
+}
+
+.footer{
+	width:80%;
+	margin:0px;
+	margin:10px;
+}
+
+.socialmedias{
+	
+}
+
+
+
+	
+
+}
